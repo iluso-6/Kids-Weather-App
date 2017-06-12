@@ -1,7 +1,7 @@
 
 # Kids Weather App
 <br><br>
-***Android Weather Application  is intended to be used by children aged 5+ years on small dimentional (Nexus 5 xxdpi) mobile phones and in the vertical orientation.
+***Android Weather Application intended to be used by children aged 5+ years on small dimentional (Nexus 5 xxdpi) mobile phones and in the vertical orientation.
 I have employed location and background services here as a means of fully understanding their functionality.
 This application uses the services of Open Weather Map Api.***
 
