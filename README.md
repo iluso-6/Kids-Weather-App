@@ -13,9 +13,9 @@ Splashscreen
 <br><br>
 
 Location activity
-<p align="center"> 
+
 ![alt tag](https://github.com/iluso-6/Kids-Weather-App/blob/master/screenshots/location.png?raw=true?raw=true)
-</p>
+
 <br><br>
 Main activity day
 
