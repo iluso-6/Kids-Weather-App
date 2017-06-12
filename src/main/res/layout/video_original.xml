@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context="shay.example.com.weatherapp.VideoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fitsSystemWindows="false" />
+
+        <ImageView
+            android:id="@+id/imageViewOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bgvideo"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alwaysDrawnWithCache="true"
+            android:orientation="horizontal"
+            android:layout_weight="0.51">
+
+            <ImageView
+                android:id="@+id/imageButtonCloud"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
+                android:src="@drawable/clouds"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageButtonLightning"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
+                android:src="@drawable/darkclouds_lightening"
+                android:scaleType="centerInside"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/imageButtonRain"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
+                android:src="@drawable/cloud2_rain"
+                android:scaleType="centerInside"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alwaysDrawnWithCache="true"
+            android:orientation="horizontal"
+            android:layout_weight="0.54">
+
+            <ImageView
+                android:id="@+id/imageButtonSun"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
+                android:src="@drawable/sun"
+                android:scaleType="centerInside"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/imageButtonSnow"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
+                android:src="@drawable/darkclouds_snow"
+                android:scaleType="centerInside"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/imageButtonFog"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
+                android:src="@drawable/fog"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

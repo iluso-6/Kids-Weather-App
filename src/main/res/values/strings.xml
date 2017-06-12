@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="city_title">Your City</string>
+    <string name="wind_speed">Wind mph</string>
+    <string name="description">Description</string>
+    <string name="temperature">Temperature</string>
+    <string name="degrees">\u0020degrees C°</string>
+    <string name="mph">\u0020mph</string>
+    <string name="city_title_value" />
+    <string name="wind_speed_value" />
+    <string name="description_value" />
+    <string name="temperature_value" />
+    <string name="drawable_value" />
+    <string name="weather_night" />
+</resources>
+
+<!--  \u0020  best practice to represent space " "  -->

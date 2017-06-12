@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mybase"
+    tools:context="shay.example.com.weatherapp.GetLocationActivity">
+
+    <ImageView
+        android:id="@+id/imageViewSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="511dp"
+        android:layout_gravity="bottom|fill_horizontal"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="118dp">
+
+
+
+        <ImageView
+            android:id="@+id/imageView_Bubble"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/speech_bubble" />
+
+            <ImageView
+                android:id="@+id/imageViewMagnifyer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/magnifyer" />
+
+            <ImageView
+                android:id="@+id/imageViewTick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/tick"
+                android:visibility="invisible" />
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/imageViewSplashSmiley"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/smiley"
+            android:transitionName="shareSmiley" />
+
+    </LinearLayout>
+
+</FrameLayout>

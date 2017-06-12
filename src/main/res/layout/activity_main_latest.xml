@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mybase"
+    android:weightSum="3"
+    android:layout_alignParentTop="true"
+    android:scaleType="centerCrop"
+    android:background="@drawable/bg2"
+    tools:context="shay.example.com.weatherapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/city_title"
+        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:gravity="center_horizontal"
+    android:layout_weight="1.15">
+    <FrameLayout
+        android:id="@+id/windItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_Bubble"
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/wind_bubble" />
+
+        <TextView
+            android:id="@+id/TextView_windSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/wind_speed"
+            android:textAlignment="inherit"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_Cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:src="@drawable/cloud"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/VERTICAL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.82"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageViewSmileyBackground2"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/smiley_video"
+            android:transitionName="shareSmiley" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:spinnerMode="dialog"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_Temp"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:maxLines="1"
+            android:text="@string/temperature"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView_TempUnderlay"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/hot_underlay" />
+
+            <ImageView
+                android:id="@+id/imageView_Temp"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/hot" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
