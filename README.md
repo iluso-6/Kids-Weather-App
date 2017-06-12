@@ -7,7 +7,8 @@ This application uses the services of Open Weather Map Api.***
 
 Splashscreen
 <br><br>
-![alt tag](https://github.com/iluso-6/Kids-Weather-App/blob/master/screenshots/splash.png?raw=true?raw=true)
+
+-> ![alt tag](https://github.com/iluso-6/Kids-Weather-App/blob/master/screenshots/splash.png?raw=true?raw=true) <-
 
 <br><br>
 
