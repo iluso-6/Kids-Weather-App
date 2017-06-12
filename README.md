@@ -28,5 +28,6 @@ Main activity night
 
 <br><br>
 Video activity
-
+<br><br>
+***There are six small children’s tutorial video’s, each played and paused by the relevent image. A background image is inserted to display the button state i.e. play or pause***
 ![alt tag](https://github.com/iluso-6/Kids-Weather-App/blob/master/screenshots/video.png?raw=true?raw=true)
