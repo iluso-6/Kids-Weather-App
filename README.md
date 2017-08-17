@@ -5,6 +5,12 @@
 I have employed location and background services here as a means of fully understanding their functionality.
 This application uses the services of Open Weather Map Api.***
 
+Preview
+<br><br>
+
+![alt tag](https://github.com/iluso-6/Kids-Weather-App/blob/master/screenshots/video.gif?raw=true?raw=true?raw=true)
+
+<br><br>
 Splashscreen
 <br><br>
 
